@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - TechIaThink</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      gap: 20px;
+      max-width: 1100px;
+    }
+
+    .member {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .member h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .member p {
+      margin: 5px 0;
+      font-size: 1em;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 40px auto;
+      padding: 12px 25px;
+      background: #007bff;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #0056b3;
+    }
+
+.member.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.member.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>À propos de TechIaThink</h1>
+    <p>Fondée par Monsieur <b>Abdarrazak Ayed</b>, jeune entrepreneur tunisien, 
+    la startup propose des services innovants en ligne pour accompagner particuliers et entreprises.</p>
+  </header>
+
+  <section class="team">
+    <div class="member">
+      <h2>Abdarrazak Ayed</h2>
+      <p><b>PDG - Président Directeur Général</b></p>
+      <p>Fondateur de TechIaThink, Responsable de la vision, du développement et du financement de la startup..</p>
+    </div>
+
+    <div class="member">
+      <h2>Nour Ben Salem</h2>
+      <p><b>Directrice Commerciale</b></p>
+      <p>Responsable de la stratégie commerciale et du développement client.</p>
+    </div>
+
+    <div class="member">
+      <h2>Taha  Chaaban</h2>
+      <p><b>Directeur Juridique</b></p>
+      <p>Supervise les aspects légaux et réglementaires de la startup.</p>
+    </div>
+  </section>
+
+  <a href="index.html" class="back-btn">⬅ Retour à l'accueil</a>
+
+
+  
+ <script src="script.js"></script>
+
+</body>
+</html>
