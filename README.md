@@ -13,7 +13,7 @@ TechIaThink est une startup tunisienne fondée par Abdarrazak Ayed, spécialisé
 - Identité visuelle
 
 Contact
-📧 Email : contact@techiathink.com  
+📧 Email : ayedabdarrazak@gmail.com  
 📞 Téléphone : +216 52 429 214
 
 Site Web
