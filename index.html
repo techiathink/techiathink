@@ -5,6 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechIaThink - Startup</title>
   <style>
+    /* ===== MENU BURGER ===== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .menu a {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu a:last-child {
+    border-bottom: none;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+
+
+    
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -296,6 +345,7 @@ header .logo img:hover {
 
 </body>
 </html>
+
 
 
 
