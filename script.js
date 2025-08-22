@@ -82,12 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Menu burger
-const menuToggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
 
-menuToggle.addEventListener("click", () => {
-  menu.classList.toggle("active");
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
+
+
 
 
