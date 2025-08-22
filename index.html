@@ -6,41 +6,52 @@
   <title>TechIaThink - Startup</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <style>
- header {
-  text-align: center;
+
+/* Header général */
+header {
   background: #222;
   color: #fff;
+  text-align: center;
   padding: 10px 20px;
-}
-
-header .logo img {
-  width: 120px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 15px rgba(255,255,255,0.6);
-}
-
-header .site-title {
-  margin: 10px 0 20px 0;
-  font-size: 28px;
-  color: #fff;
 }
 
 /* Contact bar */
 .contact-bar {
   display: flex;
   justify-content: center;
-  gap: 40px; /* espace entre email et téléphone */
+  gap: 20px;
   font-size: 14px;
-  margin-bottom: 15px;
   flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* Logo et titre */
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-title img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+.logo-title h1 {
+  margin: 10px 0 0 0;
+  font-size: 28px;
 }
 
 /* Menu */
-/* Menu */
-header .menu {
+header nav {
+  margin-top: 10px;
+}
+
+.menu {
   display: flex;
   justify-content: center;
 }
@@ -50,13 +61,13 @@ header .menu {
   color: #fff;
   font-weight: bold;
   padding: 8px 15px;
-  border-radius: 0; /* pour les coller */
-  border-left: 1px solid #fff; /* optionnel : séparateur */
+  border-radius: 0;
+  border-left: 1px solid #fff;
   transition: 0.3s;
 }
 
 .menu a:first-child {
-  border-left: none; /* pas de séparateur sur le premier bouton */
+  border-left: none;
 }
 
 .menu a:hover {
@@ -64,8 +75,7 @@ header .menu {
   color: #222;
 }
 
-
-/* Burger menu pour mobile */
+/* Menu burger */
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -73,16 +83,27 @@ header .menu {
   margin-bottom: 10px;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .menu {
-    display: none; /* caché par défaut sur mobile */
+    display: none; /* caché par défaut */
     flex-direction: column;
-    gap: 15px;
+    gap: 0;
     margin-top: 10px;
   }
 
   .menu.active {
-    display: flex; /* affiché quand on clique sur le burger */
+    display: flex; /* affiché au clic burger */
+  }
+
+  .menu a {
+    border-left: none;
+    border-top: 1px solid #fff;
+    padding: 10px;
+  }
+
+  .menu a:first-child {
+    border-top: none;
   }
 
   .menu-toggle {
@@ -206,3 +227,4 @@ header .menu {
 
 </body>
 </html>
+
