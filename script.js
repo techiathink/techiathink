@@ -85,9 +85,22 @@ document.addEventListener("DOMContentLoaded", () => {
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
+// Ouvrir / fermer le menu au clic sur le burger
+menuToggle.addEventListener('click', (e) => {
   menu.classList.toggle('active');
+  e.stopPropagation(); // empêche le clic de remonter au document
 });
+
+// Cacher le menu si clic ailleurs
+document.addEventListener('click', () => {
+  menu.classList.remove('active');
+});
+
+// Empêcher la fermeture si clic dans le menu
+menu.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
 
 
 
