@@ -2,12 +2,47 @@
     
 
     body {
+
       margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f4f4f9;
+      border-radius: 30px; 
     }
+
+    /* Section avec background ondulé */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #4A90E2, #9013FE);
+      color: white;
+      border-radius: 30px; 
+      text-align: center;
+      padding: 80px 20px 120px;
+      overflow: hidden;
+    }
+
+    /* Vague décorative */
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,192L48,213.3C96,235,192,277,288,261.3C384,245,480,171,576,165.3C672,160,768,224,864,224C960,224,1056,160,1152,128C1248,96,1344,96,1392,96L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') no-repeat;
+      background-size: cover;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 15px;
+    }
+
+
+
 
     /* Header */
     header {
@@ -286,4 +321,5 @@ header .logo img:hover {
 
 
   
+
 
