@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identité visuelle - TechIaThink</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="startup logo.png" alt="Logo TechIaThink">
+      <h1>TechIaThink</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Identité visuelle</h2>
+    <p>
+      Chez <strong>TechIaThink</strong>, nous créons une identité visuelle cohérente et impactante pour votre marque.
+    </p>
+  </section>
+
+  <!-- Contenu spécifique -->
+  <section class="services">
+    <h2>🌟 Nos expertises en identité visuelle</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>🎨 Création de logos</h3>
+        <p>Conception de logos uniques et mémorables qui reflètent l’image de votre entreprise.</p>
+      </div>
+      <div class="card">
+        <h3>📇 Cartes de visite & supports imprimés</h3>
+        <p>Design professionnel pour cartes, brochures et tout autre support de communication.</p>
+      </div>
+      <div class="card">
+        <h3>🖌 Charte graphique complète</h3>
+        <p>Définition des couleurs, typographies et styles pour une image cohérente sur tous vos supports.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Bannières & visuels web</h3>
+        <p>Création de visuels attractifs pour vos réseaux sociaux, sites web et campagnes marketing.</p>
+      </div>
+      <div class="card">
+        <h3>📦 Branding global</h3>
+        <p>Développement d’une identité forte qui se démarque et fidélise vos clients.</p>
+      </div>
+      <div class="card">
+        <h3>🛠 Maintenance & support</h3>
+        <p>Conseils et mise à jour régulière pour que votre identité visuelle reste actuelle et pertinente.</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+
+  .services h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  </style>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TechIaThink - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script menu burger -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

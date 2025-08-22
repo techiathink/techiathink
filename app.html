@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications Mobiles - TechIaThink</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="startup logo.png" alt="Logo TechIaThink">
+      <h1>TechIaThink</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Applications Mobiles</h2>
+    <p>
+      Chez <strong>TechIaThink</strong>, nous créons des applications mobiles innovantes, intuitives et performantes pour Android et iOS, adaptées à vos besoins.
+    </p>
+  </section>
+
+  <!-- Contenu spécifique -->
+  <section class="services">
+    <h2>🌟 Nos expertises</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>📱 Applications natives</h3>
+        <p>Développement pour iOS et Android avec performances optimales et expérience utilisateur fluide.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Applications hybrides</h3>
+        <p>Solutions multiplateformes avec un seul code pour réduire les coûts et accélérer la mise en ligne.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Optimisation & performance</h3>
+        <p>Analyse et amélioration des performances et de la réactivité de vos applications.</p>
+      </div>
+      <div class="card">
+        <h3>🔗 Intégration API & services</h3>
+        <p>Connexion fluide avec vos systèmes, bases de données et services externes.</p>
+      </div>
+      <div class="card">
+        <h3>🛠 Maintenance & mises à jour</h3>
+        <p>Support continu et mises à jour régulières pour vos applications mobiles.</p>
+      </div>
+      <div class="card">
+        <h3>☁️ Hébergement & cloud</h3>
+        <p>Déploiement sécurisé et hébergement sur des infrastructures fiables pour vos applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+
+  .services h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  </style>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TechIaThink - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script menu burger -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Développement Web - TechIaThink</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="startup logo.png" alt="Logo TechIaThink">
+      <h1>TechIaThink</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Développement Web</h2>
+    <p>
+      Chez <strong>TechIaThink</strong>, nous développons des sites modernes, rapides et sécurisés adaptés à vos besoins.
+    </p>
+  </section>
+
+<!-- Contenu spécifique -->
+<section class="services">
+  <h2>🌟 Nos expertises</h2>
+  <div class="service-cards">
+    <div class="card">
+      <h3>📌 Sites vitrines & E-commerce</h3>
+      <p>Conception de sites modernes et responsives pour booster votre présence en ligne.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Applications web sur mesure</h3>
+      <p>Développement d’outils adaptés à vos besoins spécifiques et évolutifs.</p>
+    </div>
+    <div class="card">
+      <h3>🚀 Optimisation SEO & performance</h3>
+      <p>Amélioration du référencement et de la rapidité de vos plateformes.</p>
+    </div>
+    <div class="card">
+      <h3>🔗 Intégration API & bases de données</h3>
+      <p>Connexion fluide entre vos systèmes et gestion optimisée des données.</p>
+    </div>
+    <div class="card">
+      <h3>🛠 Optimisation des sites </h3>
+      <p>Analyse et amélioration des sites web existants pour un meilleur rendement et ergonomie.</p>
+    </div>
+    <div class="card">
+      <h3>☁️ Hébergement web</h3>
+      <p>Solutions d’hébergement fiables et sécurisées pour garantir la disponibilité de votre site.</p>
+    </div>
+    <div class="card">
+      <h3>💼 Maintenance & support</h3>
+      <p>Assistance technique continue pour maintenir vos services toujours performants.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+</style>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TechIaThink - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script menu burger -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

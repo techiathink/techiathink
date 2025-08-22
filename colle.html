@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collecte des données - TechIaThink</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="startup logo.png" alt="Logo TechIaThink">
+      <h1>TechIaThink</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Collecte des données</h2>
+    <p>
+      Chez <strong>TechIaThink</strong>, nous extrayons et organisons des données fiables pour vos analyses et décisions stratégiques.
+    </p>
+  </section>
+
+  <!-- Contenu spécifique -->
+  <section class="services">
+    <h2>🌟 Nos expertises en collecte des données</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>📊 Extraction de données</h3>
+        <p>Collecte automatisée et structurée de données à partir de différentes sources.</p>
+      </div>
+      <div class="card">
+        <h3>🔍 Nettoyage & traitement</h3>
+        <p>Filtrage, normalisation et structuration des données pour garantir leur qualité.</p>
+      </div>
+      <div class="card">
+        <h3>💾 Stockage sécurisé</h3>
+        <p>Organisation et sauvegarde des données dans des systèmes fiables et sécurisés.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Analyse préliminaire</h3>
+        <p>Préparation de rapports et visualisations pour comprendre rapidement les tendances des données.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Automatisation</h3>
+        <p>Mise en place de processus automatisés pour collecter régulièrement les nouvelles données.</p>
+      </div>
+      <div class="card">
+        <h3>🛠 Maintenance & support</h3>
+        <p>Assistance continue pour assurer la disponibilité et la fiabilité de vos flux de données.</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+
+  .services h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  </style>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TechIaThink - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script menu burger -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

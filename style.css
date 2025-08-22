@@ -1,0 +1,241 @@
+
+    
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f9;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 50px;
+      background: #222;
+      color: #fff;
+    }
+
+  header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 150px; /* plus grand */
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 3px solid #fff; /* plus clair */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* halo lumineux */
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Animation au survol */
+header .logo img:hover {
+  transform: scale(1.2) rotate(5deg); /* zoom + légère rotation */
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9); /* halo plus fort */
+}
+
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* Section Hero */
+    .hero {
+      background: linear-gradient(to right, #673ab7, #512da8);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Services */
+    .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: #673ab7;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 60px 20px;
+      background: #eee;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #673ab7;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #512da8;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+
+.service {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.service.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+          /* ===== MENU BURGER ===== */
+      .menu-toggle {
+        display: none;
+        font-size: 26px;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .menu {
+        display: flex;
+        gap: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        .menu {
+          display: none;
+          flex-direction: column;
+          background: #222;
+          position: absolute;
+          top: 60px;
+          right: 10px;
+          width: 220px;
+          padding: 15px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .menu a {
+          padding: 12px;
+          text-align: center;
+          border: 2px solid #fff;    /* ✅ Contour blanc */
+          border-radius: 50px;       /* ✅ Boutons arrondis type pill */
+          margin: 8px 0;             /* ✅ Espacement entre les boutons */
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+          display: block;
+          transition: all 0.3s ease;
+        }
+
+        .menu a:hover {
+          background: #fff;
+          color: #222;
+          transform: scale(1.05);    /* ✅ Petit zoom au survol */
+        }
+
+        .menu.active {
+          display: flex;
+        }
+      }
+
+
+
+  

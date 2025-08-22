@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Digital - TechIaThink</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="startup logo.png" alt="Logo TechIaThink">
+      <h1>TechIaThink</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Marketing Digital</h2>
+    <p>
+      Chez <strong>TechIaThink</strong>, nous boostons votre présence en ligne grâce à des stratégies digitales efficaces et adaptées à votre activité.
+    </p>
+  </section>
+
+  <!-- Contenu spécifique -->
+  <section class="services">
+    <h2>🌟 Nos expertises</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>📈 Référencement SEO</h3>
+        <p>Optimisation de votre site pour apparaître en haut des résultats de recherche.</p>
+      </div>
+      <div class="card">
+        <h3>📢 Publicité en ligne</h3>
+        <p>Campagnes Google Ads et réseaux sociaux ciblées pour générer du trafic et des conversions.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Gestion des réseaux sociaux</h3>
+        <p>Création et animation de vos pages pour engager votre audience et fidéliser vos clients.</p>
+      </div>
+      <div class="card">
+        <h3>✉️ Email marketing</h3>
+        <p>Conception de newsletters efficaces pour fidéliser et convertir vos prospects.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Analyse & reporting</h3>
+        <p>Suivi des performances et recommandations pour améliorer vos campagnes digitales.</p>
+      </div>
+      <div class="card">
+        <h3>🛠 Maintenance & optimisation</h3>
+        <p>Amélioration continue de vos campagnes et contenus pour des résultats durables.</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+
+  .services h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  </style>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TechIaThink - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script menu burger -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
