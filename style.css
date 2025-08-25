@@ -1,216 +1,115 @@
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f9;
+}
 
-    
-
-    body {
-        
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f4f4f9;
-    }
-
-    /* Header */
-/* Header principal */
-header > :first-child { /* le logo + titre */
+/* ===== HEADER ===== */
+header {
   display: flex;
   align-items: center;
-  
+  justify-content: space-between; /* Logo à gauche, menu burger/menu à droite */
+  padding: 15px 50px;
+  background: #222;
+  color: #fff;
+  position: relative; /* Nécessaire pour positionner le menu mobile */
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 40px; /* espace entre le logo et les boutons du menu */
-}
-
-/* Pour mobile */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header nav {
-    gap: 20px;
-    width: 100%;
-  }
-
-  .menu-toggle {
-    display: block;
-    margin-top: 5px;
-  }
-
-  .menu {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 50px;
-      background: #222;
-      color: #fff;
-    }
-
-  header .logo {
+header .logo {
   display: flex;
   align-items: center;
 }
 
 header .logo img {
-  width: 150px; /* plus grand */
+  width: 150px;
   margin-right: 15px;
   border-radius: 50%;
-  border: 3px solid #fff; /* plus clair */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* halo lumineux */
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
   transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-/* Animation au survol */
 header .logo img:hover {
-  transform: scale(1.2) rotate(5deg); /* zoom + légère rotation */
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9); /* halo plus fort */
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
 }
 
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
 
-    header h1 {
-      font-size: 24px;
-      margin: 0;
-    }
+/* ===== NAVIGATION ===== */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+nav a:hover {
+  color: #ff9800;
+}
 
-    nav a:hover {
-      color: #ff9800;
-    }
+/* ===== MENU BURGER ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
 
-    /* Section Hero */
-    .hero {
-      background: linear-gradient(to right, #673ab7, #512da8);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
+.menu {
+  display: flex;
+  gap: 15px;
+}
 
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(to right, #673ab7, #512da8);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto;
-    }
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
-    /* Services */
-    .services {
-      padding: 60px 20px;
-      text-align: center;
-    }
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-    .services h2 {
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
+/* ===== SERVICES ===== */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    .service-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+.services h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
 
-    .service {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .service:hover {
-      transform: translateY(-5px);
-    }
-
-    .service img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .service h3 {
-      margin-bottom: 10px;
-      color: #673ab7;
-    }
-
-    /* Contact */
-    .contact {
-      padding: 60px 20px;
-      background: #eee;
-    }
-
-    .contact h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    form {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    form button {
-      background: #673ab7;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background 0.3s;
-    }
-
-    form button:hover {
-      background: #512da8;
-    }
-
-    /* Footer */
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
 
 .service {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -221,102 +120,134 @@ header .logo img:hover {
   transform: translateY(0);
 }
 
+.service:hover {
+  transform: translateY(-5px);
+}
 
+.service img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
-          /* ===== MENU BURGER ===== */
-      .menu-toggle {
-        display: none;
-        font-size: 26px;
-        cursor: pointer;
-        color: #fff;
-      }
+.service h3 {
+  margin-bottom: 10px;
+  color: #673ab7;
+}
 
-      .menu {
-        display: flex;
-        gap: 15px;
-      }
+/* ===== CONTACT ===== */
+.contact {
+  padding: 60px 20px;
+  background: #eee;
+}
 
-      @media (max-width: 768px) {
-        .menu-toggle {
-          display: block;
-        }
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-        .menu {
-          display: none;
-          flex-direction: column;
-          background: #222;
-          position: absolute;
-          top: 60px;
-          right: 10px;
-          width: 220px;
-          padding: 15px;
-          border-radius: 12px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-        .menu a {
-          padding: 12px;
-          text-align: center;
-          border: 2px solid #fff;    /* ✅ Contour blanc */
-          border-radius: 50px;       /* ✅ Boutons arrondis type pill */
-          margin: 8px 0;             /* ✅ Espacement entre les boutons */
-          color: #fff;
-          font-weight: bold;
-          text-decoration: none;
-          display: block;
-          transition: all 0.3s ease;
-        }
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-        .menu a:hover {
-          background: #fff;
-          color: #222;
-          transform: scale(1.05);    /* ✅ Petit zoom au survol */
-        }
+form button {
+  background: #673ab7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
 
-        .menu.active {
-          display: flex;
-        }
-      }
+form button:hover {
+  background: #512da8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   header {
-    padding: 15px 20px; /* conserve la mise en page mais réduit le padding */
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto; /* pousse le burger à droite */
   }
 
   .menu {
+    display: none;
     flex-direction: column;
+    background: #222;
     position: absolute;
-    top: 60px;
+    top: 60px; /* juste en dessous du header */
     right: 10px;
-    width: 90%; /* plus large pour mobile */
-    max-width: 220px;
+    width: 220px;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
   .menu a {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50px;
     margin: 8px 0;
-    font-size: 16px; /* texte plus petit pour mobile */
-    padding: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
   }
-}
-@media (max-width: 768px) {
+
+  .menu a:hover {
+    background: #fff;
+    color: #222;
+    transform: scale(1.05);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
   .hero {
-    padding: 50px 15px; /* moins haut pour mobile */
+    padding: 50px 15px;
   }
 
   .hero h2 {
-    font-size: 28px; /* réduit la taille */
+    font-size: 28px;
   }
 
   .hero p {
     font-size: 16px;
-    max-width: 90%; /* texte ne dépasse pas */
+    max-width: 90%;
   }
-}
-@media (max-width: 768px) {
+
   .service-container {
-    grid-template-columns: 1fr; /* une colonne sur mobile */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
@@ -324,7 +255,3 @@ header .logo img:hover {
     padding: 15px;
   }
 }
-
-
-
-  
